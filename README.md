@@ -5,7 +5,7 @@ Mini e-commerce de cafetería con Next.js 15 + TypeScript + Tailwind. Catálogo,
 Lovcaffe es un mini e-commerce de cafetería hecho con Next.js 15, TypeScript y Tailwind. Incluye catálogo, carrito, checkout simulado y buenas prácticas para CV: ESLint/Prettier, tests y deploy continuo en Vercel.
 
 ## 🚀 Demo
-> Añade aquí la URL de Vercel cuando deployes.
+
 
 ## 🧰 Stack
 - Next.js 15 (App Router)
