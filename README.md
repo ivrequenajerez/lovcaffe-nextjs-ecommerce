@@ -1,28 +1,26 @@
 # lovcaffe-nextjs-ecommerce
 
-Mini e-commerce de cafetería con Next.js 15 + TypeScript + Tailwind. Catálogo, carrito y checkout simulado. Deploy en Vercel.
+Mini e-commerce de cafetería con Next.js 15 + TypeScript + Tailwind, orientado a crear un catálogo, carrito y checkout simulado, con despliegue en Vercel.
 
-## 🎯 Descripción
+## 🎯 Objetivo general
 
-Lovcaffe es un mini e-commerce de cafetería desarrollado con **Next.js 15**, **TypeScript** y **Tailwind CSS**.  
-El objetivo es mostrar un proyecto moderno, optimizado y con buenas prácticas de desarrollo, ideal para portafolio profesional.  
-Incluye catálogo de productos, gestión de carrito y un checkout simulado para demostrar integración de estado y flujos de compra.
+Desarrollar un mini e-commerce para una cafetería con un diseño moderno, optimizado y siguiendo buenas prácticas de desarrollo, ideal para portafolio profesional.  
+Este proyecto busca implementar un catálogo de productos, gestión de carrito y un checkout simulado que permita demostrar integración de estado y flujos de compra.
 
-## 🧰 Tecnologías y herramientas
+## 🧰 Tecnologías y herramientas previstas
 
 - **Next.js 15 (App Router)** para renderizado híbrido SSR/SSG/ISR.
 - **TypeScript** para tipado estático y mayor mantenibilidad.
 - **Tailwind CSS** para estilos rápidos y consistentes.
-- **ESLint + Prettier** para un código limpio y formateado.
+- **ESLint + Prettier** para mantener el código limpio y consistente.
 - **Jest + React Testing Library** para tests de componentes y lógica.
 - **Vercel** para despliegue continuo (CI/CD).
 
-## 📦 Funcionalidades
+## 📦 Funcionalidades previstas
 
-- Listado dinámico de productos (menú de café y pastelería).
-- Sistema de carrito (añadir, eliminar, actualizar cantidades, cálculo de totales).
-- Checkout simulado con validaciones básicas.
-- Navegación rápida con **App Router**.
-- Responsive design para móvil, tablet y escritorio.
-- SEO básico (metadatos, título dinámico, favicon, etc.).
-
+- Implementar un listado dinámico de productos (menú de café y pastelería).
+- Desarrollar un sistema de carrito (añadir, eliminar, actualizar cantidades, cálculo de totales).
+- Crear un checkout simulado con validaciones básicas.
+- Integrar navegación rápida con **App Router**.
+- Diseñar una interfaz responsive para móvil, tablet y escritorio.
+- Añadir SEO básico (metadatos, título dinámico, favicon, etc.).
