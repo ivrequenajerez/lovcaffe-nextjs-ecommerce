@@ -1,7 +1,12 @@
+import "./globals.css";
+
+import { ReactNode } from "react";
+import { SessionProvider } from "next-auth/react";
+
+import Header from "@/components/HeaderHome";
+
 import type { Metadata } from "next";
 import { Raleway, Playfair_Display } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/HeaderHome"; // 👈 importa el header (client)
 
 const raleway = Raleway({
   variable: "--font-raleway",
@@ -27,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${raleway.variable} ${playfair.variable} antialiased`}>
+        <SessionProvider>{children}</SessionProvider>
         <Header />
         <main>{children}</main>
       </body>
