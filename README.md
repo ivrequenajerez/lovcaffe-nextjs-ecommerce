@@ -4,7 +4,7 @@ Mini e-commerce de cafetería con Next.js 15 + TypeScript + Tailwind, orientado 
 
 ## 🎯 Objetivo general
 
-Desarrollar un mini e-commerce para una cafetería con un diseño moderno, optimizado y siguiendo buenas prácticas de desarrollo, ideal para portafolio profesional.  
+Desarrollar un mini e-commerce para una cafetería con un diseño moderno, optimizado y siguiendo buenas prácticas de desarrollo.  
 Este proyecto busca implementar un catálogo de productos, gestión de carrito y un checkout simulado que permita demostrar integración de estado y flujos de compra.
 
 ## 🧰 Tecnologías y herramientas previstas
