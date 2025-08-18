@@ -1,10 +1,6 @@
 import "./globals.css";
-
-import { ReactNode } from "react";
-import { SessionProvider } from "next-auth/react";
-
 import Header from "@/components/HeaderHome";
-
+import Providers from "@/components/Providers";
 import type { Metadata } from "next";
 import { Raleway, Playfair_Display } from "next/font/google";
 
@@ -32,9 +28,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${raleway.variable} ${playfair.variable} antialiased`}>
-        <SessionProvider>{children}</SessionProvider>
-        <Header />
-        <main>{children}</main>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
