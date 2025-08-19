@@ -1,10 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useSession, signIn, signOut } from "next-auth/react";
 import { UserIcon } from "@heroicons/react/24/outline";
-import { signIn, signOut } from "next-auth/react";
 
-export default function LoginButton({ isLogged }: { isLogged: boolean }) {
+export default function LoginButton() {
+  const { data: session, status } = useSession();
   const [loading, setLoading] = useState(false);
 
   const handleLogin = () => {
@@ -17,7 +18,7 @@ export default function LoginButton({ isLogged }: { isLogged: boolean }) {
     signOut({ callbackUrl: "/" });
   };
 
-  if (loading) {
+  if (loading || status === "loading") {
     return (
       <button
         disabled
@@ -48,7 +49,7 @@ export default function LoginButton({ isLogged }: { isLogged: boolean }) {
     );
   }
 
-  return isLogged ? (
+  return session ? (
     <button
       onClick={handleLogout}
       className="text-gray-900 p-2 hover:text-[--color-brand-600] flex items-center gap-2"

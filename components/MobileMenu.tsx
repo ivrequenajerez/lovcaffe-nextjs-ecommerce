@@ -8,8 +8,13 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from "@headlessui/react";
-import { Bars3Icon, ChevronDownIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+  Bars3Icon,
+  ChevronDownIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
 import { FaCoffee } from "react-icons/fa";
+import LoginButton from "./ui/LoginButton";
 
 const products = [
   { name: "Analytics", href: "#" },
@@ -40,7 +45,11 @@ export default function MobileMenu() {
         </button>
       </div>
 
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+      <Dialog
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+        className="lg:hidden"
+      >
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -104,13 +113,8 @@ export default function MobileMenu() {
                   Nosotros
                 </a>
               </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Iniciar sesión
-                </a>
+              <div className="-mx-3 px-3 py-2.5">
+                <LoginButton />
               </div>
             </div>
           </div>
